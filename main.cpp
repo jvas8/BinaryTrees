@@ -30,5 +30,22 @@ void preOrder(BinaryTreeNode* root) {
     inorder(root->left);
     inorder(root->right);
 }
+void preOrder(BinaryTreeNode* root) {
+    if (root == nullptr){
+        return;
+    }
+    cout << root->data << " ";
+    inorder(root->left);
+    inorder(root->right);
+}
+void postOrder(BinaryTreeNode* root) {
+    if (root == nullptr){
+        return;
+    }
+    inorder(root->left);
+    inorder(root->right);
+    cout << root->data << " ";
+
+}
 
 
